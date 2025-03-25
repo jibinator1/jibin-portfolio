@@ -1,0 +1,21 @@
+.introduction {
+    text-align: center;
+    margin-top: 15rem;
+}
+
+#intro1 {
+    font-size: 2rem;
+    color: #ffffff;
+    transition: opacity 3s ease-in-out;
+}
+
+.fading {
+    opacity: 0;
+
+}
+
+#intro2 {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
