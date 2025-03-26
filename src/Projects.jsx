@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import './Projects.css';
 
-const projects = [ //create an image with id and image file location
-    { id: 1, image: `${process.env.PUBLIC_URL}/images/bok-chourney.png`, name: "Bok Chourney", github: "https://jibinator1.github.io/Bok-Chourney-Weather-App-/index.html" },
-    { id: 2, image: `${process.env.PUBLIC_URL}/images/unisear-Front.png`, name: "Unisear", github: "https://dorahacks.io/buidl/23043" },
-    { id: 3, image: `${process.env.PUBLIC_URL}/images/FASTdemo.png`, name: "F.A.S.T", github: "https://github.com/jibinator1/FAST" },
-    { id: 4, image: `${process.env.PUBLIC_URL}/images/freecodecamp-data-cert.png`, name: "Data Analysis with Python Certificate", github: "https://www.freecodecamp.org/certification/fcccf773034-9030-4623-b6f0-5c505e38edf8/javascript-algorithms-and-data-structures-v8" },
-    { id: 5, image: `${process.env.PUBLIC_URL}/images/freecodecamp-js-cert.png`, name: "Javascript Algorithms and Data Structures Certificate", github: "https://www.freecodecamp.org/certification/fcccf773034-9030-4623-b6f0-5c505e38edf8/data-analysis-with-python-v7" },
-];
+import bokChourney from '../public/images/bok-chourney.png';
+import unisearFront from '../public/images/unisear-Front.png';
+import fastDemo from '../public/images/FASTdemo.png';
+import freecodecampDataCert from '../public/images/freecodecamp-data-cert.png';
+import freecodecampJsCert from '../public/images/freecodecamp-js-cert.png';
 
+const projects = [
+    { id: 1, image: bokChourney, name: "Bok Chourney", github: "https://jibinator1.github.io/Bok-Chourney-Weather-App-/index.html" },
+    { id: 2, image: unisearFront, name: "Unisear", github: "https://dorahacks.io/buidl/23043" },
+    { id: 3, image: fastDemo, name: "F.A.S.T", github: "https://github.com/jibinator1/FAST" },
+    { id: 4, image: freecodecampDataCert, name: "Data Analysis with Python Certificate", github: "https://www.freecodecamp.org/certification/fcccf773034-9030-4623-b6f0-5c505e38edf8/javascript-algorithms-and-data-structures-v8" },
+    { id: 5, image: freecodecampJsCert, name: "Javascript Algorithms and Data Structures Certificate", github: "https://www.freecodecamp.org/certification/fcccf773034-9030-4623-b6f0-5c505e38edf8/data-analysis-with-python-v7" },
+];
 function Projects() {
     const [isHovered, setIsHovered] = useState(false); //isHovered is the current state with SetIsHovered is called when we want to change isHovered
 
